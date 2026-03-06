@@ -22,7 +22,7 @@ body {
 
 header {
     background-color: var(--black-primary-color);
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 100;
     display: flex;
@@ -30,10 +30,11 @@ header {
     align-items: center;
     padding: 4px 100px;
     min-height: 70px;
+    max-height: 150px;
     font-size: 1.2rem;
 
     img {
-        max-width: 130px;
+        max-width: 270px;
        
     }
 
@@ -55,9 +56,8 @@ header {
     }
 }
 
-
 #hero {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(/assets/images/hero-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -115,6 +115,59 @@ header {
 
     
     }
+}
+
+#about {
+    min-height: 100vh;
+    display: flex;
+
+    .about-text {
+        flex: 1;
+        padding: 80px 60px;  
+        background-color: var(--white-primary-color); 
+        h2 {
+            border-left: 5px solid var(--red-primary-color);
+            padding-left: 16px;
+            font-size: 2rem;
+            margin-bottom: 24px;
+        }
+        p {
+            color: var(--secondary-text);
+            line-height: 1.8;
+        }
+    }
+    .about-highlights {
+        flex: 1;
+        background-color: var(--black-primary-color);
+        padding: 80px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 36px;
+
+        
+        .highlight-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            color: var(--white-primary-color);
+            .highlight-icon {
+                font-size: 2rem;
+                flex-shrink: 0;
+            }
+            h3 {
+                color: var(--red-primary-color);
+                font-size: 1.1rem;
+                margin-bottom: 6px;
+            }
+            p {
+                color: var(--primary-text);
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+        }
+    }
+
 }
 
 
