@@ -30,9 +30,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 4px 100px;
-    min-height: 70px;
-    max-height: 150px;
-    font-size: 1.2rem;
+    max-height: 100px;
+    font-size: 1rem;
 
     img {
         max-width: 230px;
@@ -58,7 +57,7 @@ header {
 }
 
 #hero {
-    min-height: 100vh;
+    min-height: 88vh;
     background-image: url(/assets/images/hero-bg.jpg);
     background-size: cover;
     background-position: center;
