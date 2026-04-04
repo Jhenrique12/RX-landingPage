@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RX - Comércio e Equipamentos com soluções industriais em rolos, cavaletes, tambores e componentes para mineração, siderurgia e mais.">
+    <meta name="description" content="RX Comércio e Equipamentos - Soluções industriais em rolos, cavaletes, tambores, revestimentos e componentes para mineração, siderurgia, portuário e mais.">
+    <meta name="keywords" content="equipamentos industriais, rolos industriais, cavaletes, tambores, revestimento industrial, mineração, siderurgia, RX equipamentos">
+    <meta name="author" content="RX Comércio e Equipamentos">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="RX - Comércio e Equipamentos">
+    <meta property="og:description" content="Soluções industriais de alta performance em rolos, cavaletes, tambores e revestimentos para mineração, siderurgia e mais.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rx-comercio.netlify.app/">
+    <meta property="og:image" content="https://rx-comercio.netlify.app/assets/images/rx-logo-dark.webp">
+
     <title>RX - Comércio e Equipamentos</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/images/rx-favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/rx-favicon.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
-        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script src="assets/js/main.js" defer></script>   
 </head>
 <body>
-    <header>
-        <a href="#"><img src="assets/images/rx-name-logo-dark.png" alt="Logo da RX"></a>
-        <nav>
+    <header id="mainHeader">
+        <a href="#hero" aria-label="Voltar ao início"><img src="assets/images/rx-name-logo-dark-removebg.png" alt="Logo da RX Comércio e Equipamentos" width="230" height="70"></a>
+        <nav id="navHeader" aria-label="Navegação principal">
             <ul>
-                <!-- <li><a href="#hero">Início</a></li> -->
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#products">Produtos</a></li>
                 <li><a href="#services">Serviços</a></li>
@@ -26,47 +39,63 @@
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
+        <button class="menu-toggle" aria-label="Abrir menu de navegação">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
     <main>
         <section id="hero">
             <div class="hero-content">
-                <h1 class="hero-text">Tudo que sua empresa precisa <span>para crescer com segurança</span></h1>
-                <!-- <h2>Soluções que transformam desempenho em resultado</h2> -->
-                <!-- <h2>Qualidade que gera confiança</h2> -->
-                <!-- <h2 class="hero-text">Precisão em cada detalhe. <span>Resultado em cada entrega</span></h2> -->
-        
+                <h1 class="hero-text">Tudo o que sua empresa precisa <span>para crescer com segurança</span></h1>
                 <a class="hero-btn" href="#contact">Descubra como</a>
-
-                <!-- <a href="#contact" class="btn-hero">Solicitar proposta</a> -->
             </div>
-            
-
         </section>
     
         <section id="about">
             <div class="about-text">
-                <h2>Sobre a RX</h2>
-                <p>A <span>RX Comércio e Equipamentos</span> é uma empresa especializada em soluções industriais de alta performance. Com mais de uma década de experiência, oferecemos produtos e serviços que transformam processos produtivos em diferentes setores.</p>
-                <p>Nossa missão é ser parceira confiável de empresas que buscam eficiência, qualidade e inovação. Cada solução é desenvolvida com foco em durabilidade, performance e sustentabilidade.</p>
+                <h2 data-aos="fade-right">Sobre a RX</h2>
+                <p data-aos="fade-right" data-aos-delay="100">A <span>RX Comércio e Equipamentos</span> é uma empresa especializada em soluções industriais de alta performance. Com mais de uma década de experiência, oferecemos produtos e serviços que transformam processos produtivos em diferentes setores.</p>
+                <p data-aos="fade-right" data-aos-delay="200">Nossa missão é ser parceira confiável de empresas que buscam eficiência, qualidade e inovação. Cada solução é desenvolvida com foco em durabilidade, performance e sustentabilidade.</p>
+                <img class="about-logo-mobile" src="assets/images/rx-logo.webp" alt="Logo RX" width="180" height="180">
             </div>
 
             <div class="about-highlights">
-                <div class="highlight-card">
+                <div class="highlight-card" data-aos="fade-right" data-aos-delay="200">
+                    <div class="highlight-front">
+                        <h3>Inovação</h3>
+                    </div>
+                    <div class="highlight-back">
+                        <p>Soluções modernas que acompanham a evolução tecnológica do mercado industrial.</p>
+                    </div>
                     <div class="highlight-content">
                         <h3>Inovação</h3>
                         <p>Soluções modernas que acompanham a evolução tecnológica do mercado industrial.</p>
                     </div>
                 </div>
 
-                <div class="highlight-card">
+                <div class="highlight-card" data-aos="fade-left" data-aos-delay="400">
+                    <div class="highlight-front">
+                        <h3>Qualidade</h3>
+                    </div>
+                    <div class="highlight-back">
+                        <p>Materiais premium e processos certificados garantem excelência em cada produto.</p>
+                    </div>
                     <div class="highlight-content">
                         <h3>Qualidade</h3>
                         <p>Materiais premium e processos certificados garantem excelência em cada produto.</p>
                     </div>
                 </div>
 
-                <div class="highlight-card">
+                <div class="highlight-card" data-aos="fade-right" data-aos-delay="600">
+                    <div class="highlight-front">
+                        <h3>Confiança</h3>
+                    </div>
+                    <div class="highlight-back">
+                        <p>Profissionais experientes com mais de 10 anos de atuação dedicados ao seu sucesso.</p>
+                    </div>
                     <div class="highlight-content">
                         <h3>Confiança</h3>
                         <p>Profissionais experientes com mais de 10 anos de atuação dedicados ao seu sucesso.</p>
@@ -78,12 +107,12 @@
         <div class="break-line"></div>
         
         <section id="products">
-            <h2>Nossos Produtos</h2>
+            <h2 data-aos="fade-right">Nossos Produtos</h2>
             
             <div class="products-grid">
                 
                 <div class="product-card">
-                    <img src="assets/images/rolos-product.png" alt="Rolos Industriais">
+                    <img src="assets/images/rolos-product.webp" alt="Rolos industriais para sistemas de transporte" loading="lazy" width="400" height="200">
                     <h3>Rolos</h3>
                     <p>Rolos de alta performance para sistemas de transporte e processamento. Fabricados com materiais resistentes à abrasão e impacto.</p>
                     <a href="#contact" class="btn-product">Consultar</a>
@@ -91,7 +120,7 @@
 
                 
                 <div class="product-card">
-                    <img src="assets/images/cavalete-product.png" alt="Cavaletes">
+                    <img src="assets/images/cavalete-product.webp" alt="Cavaletes de suporte para equipamentos industriais" loading="lazy" width="400" height="200">
                     <h3>Cavaletes</h3>
                     <p>Estruturas de suporte robustas para equipamentos industriais. Projetados para máxima estabilidade e durabilidade em ambientes exigentes.</p>
                     <a href="#contact" class="btn-product">Consultar</a>
@@ -99,7 +128,7 @@
 
                 
                 <div class="product-card">
-                    <img src="assets/images/tambores-product.png" alt="Tambores">
+                    <img src="assets/images/tambores-product.webp" alt="Tambores de revestimento para mineração e siderurgia" loading="lazy" width="400" height="200">
                     <h3>Tambores</h3>
                     <p>Tambores de revestimento especial para aplicações em mineração e siderurgia. Resistência extrema a desgaste e corrosão química.</p>
                     <a href="#contact" class="btn-product">Consultar</a>
@@ -107,7 +136,7 @@
 
                 
                 <div class="product-card">
-                    <img src="assets/images/peças-industriais-products.png" alt="Componentes">
+                    <img src="assets/images/peças-industriais-products.avif" alt="Componentes e peças de reposição industrial" loading="lazy" width="400" height="200">
                     <h3>Componentes</h3>
                     <p>Peças de reposição e componentes modulares para manutenção e montagem. Compatíveis com equipamentos de diversos fabricantes.</p>
                     <a href="#contact" class="btn-product">Consultar</a>
@@ -115,7 +144,7 @@
 
                 
                 <div class="product-card">
-                    <img src="assets/images/revestimento-industrial.png" alt="Revestimentos">
+                    <img src="assets/images/revestimento-industrial.webp" alt="Revestimentos customizados para proteção de equipamentos" loading="lazy" width="400" height="200">
                     <h3>Revestimentos</h3>
                     <p>Soluções de revestimento customizadas para proteção de equipamentos. Aumentam a vida útil e reduzem custos de manutenção.</p>
                     <a href="#contact" class="btn-product">Consultar</a>
@@ -123,7 +152,7 @@
 
                 
                 <div class="product-card">
-                    <img src="assets/images/servicos-product.jpg" alt="Serviços Especiais">
+                    <img src="assets/images/servicos-product.webp" alt="Consultoria técnica e serviços especializados" loading="lazy" width="400" height="200">
                     <h3>Serviços Especiais</h3>
                     <p>Consultoria técnica, projeto customizado e suporte especializado. Equipe de engenheiros disponível para soluções sob medida.</p>
                     <a href="#contact" class="btn-product">Consultar</a>
@@ -132,16 +161,18 @@
         </section>
     
         <section id="services">
-            <h2>Serviços</h2>
-            <div class="services-container">
+            <h2 data-aos="fade-right">Serviços</h2>
+            <div class="services-container" data-aos="fade-right">
                 <div class="service-item white-bg">
                     <div class="service-content">
                         <h3>Revestimento de Tambores</h3>
-                        <p>Evita desgaste prematuro causado por atrito contínuo</br>
-                            Aumenta significativamente a vida útil dos tambores</br>
-                            Reduz paradas não programadas na operação</br>
-                            Melhora a aderência e o desempenho do sistema</br>
-                            Diminui custos com manutenção corretiva</p>
+                        <ul>
+                            <li>Evita desgaste prematuro causado por atrito contínuo</li>
+                            <li>Aumenta significativamente a vida útil dos tambores</li>
+                            <li>Reduz paradas não programadas na operação</li>
+                            <li>Melhora a aderência e o desempenho do sistema</li>
+                            <li>Diminui custos com manutenção corretiva</li>
+                        </ul>
                     </div>
                     <a href="#contact" class="btn-service">Consultar</a>
                 </div>
@@ -149,11 +180,13 @@
                 <div class="service-item white-bg">
                     <div class="service-content">
                         <h3>Revestimento e Reforma de Componentes</h3>
-                        <p>Recupera peças desgastadas sem necessidade de substituição total</br>
-                            Reduz custos operacionais com reposição de componentes</br>
-                            Aumenta a resistência contra abrasão, impacto e corrosão</br>
-                            Restaura a performance original do equipamento</br>
-                            Prolonga o ciclo de vida dos ativos industriais</p>
+                        <ul>
+                            <li>Recupera peças desgastadas sem necessidade de substituição total</li>
+                            <li>Reduz custos operacionais com reposição de componentes</li>
+                            <li>Aumenta a resistência contra abrasão, impacto e corrosão</li>
+                            <li>Restaura a performance original do equipamento</li>
+                            <li>Prolonga o ciclo de vida dos ativos industriais</li>
+                        </ul>
                     </div>
                     <a href="#contact" class="btn-service">Consultar</a>
                 </div>
@@ -161,11 +194,13 @@
                 <div class="service-item white-bg">
                     <div class="service-content">
                         <h3>Revestimento e Reforma de Tubulações</h3>
-                        <p>Protege contra corrosão e desgaste interno/externo</br>
-                            Reduz riscos de vazamentos e falhas estruturais</br>
-                            Aumenta a durabilidade das tubulações em ambientes agressivos</br>
-                            Melhora a eficiência no transporte de materiais/fluidos</br>
-                            Diminui custos com manutenção e substituições frequentes</p>
+                        <ul>
+                            <li>Protege contra corrosão e desgaste interno/externo</li>
+                            <li>Reduz riscos de vazamentos e falhas estruturais</li>
+                            <li>Aumenta a durabilidade das tubulações em ambientes agressivos</li>
+                            <li>Melhora a eficiência no transporte de materiais/fluidos</li>
+                            <li>Diminui custos com manutenção e substituições frequentes</li>
+                        </ul>
                     </div>
                     <a href="#contact" class="btn-service">Consultar</a>
                 </div>
@@ -176,39 +211,39 @@
         <div class="break-line"></div>
     
         <section id="sectors">
-            <h2>Setores de atuação</h2>
+            <h2 data-aos="fade-right">Setores de atuação</h2>
 
             <div class="sectors-grid">
                 <div class="sector-card">
-                    <img src="assets/images/mineracao.jpg" alt="Imagem do Setor Mineração">
+                    <img src="assets/images/mineracao.webp" alt="Setor de Mineração" loading="lazy" width="600" height="400">
                     <div class="sector-overlay">
                         <h3>Mineração</h3>
                     </div>
                 </div>
                 
                 <div class="sector-card">
-                    <img src="assets/images/siderurgia.jpg" alt="Imagem do Setor Siderurgia">
+                    <img src="assets/images/siderurgia.webp" alt="Setor Siderúrgico" loading="lazy" width="600" height="400">
                     <div class="sector-overlay">
                         <h3>Siderúrgico</h3>
                     </div>
                 </div>
 
                 <div class="sector-card">
-                    <img src="assets/images/portuario.png" alt="Imagem do Setor Portuário">
+                    <img src="assets/images/portuario.webp" alt="Setor Portuário" loading="lazy" width="600" height="400">
                     <div class="sector-overlay">
                         <h3>Portuário</h3>
                     </div>
                 </div>
                 
                 <div class="sector-card">
-                    <img src="assets/images/automotivo.jpg" alt="Imagem do Setor">
+                    <img src="assets/images/automotivo.webp" alt="Setor Automotivo" loading="lazy" width="600" height="400">
                     <div class="sector-overlay">
                         <h3>Automotivo</h3>
                     </div>
                 </div>
     
                 <div class="sector-card">
-                    <img src="assets/images/imagem-teste.jpg" alt="Imagem do Setor">
+                    <img src="assets/images/imagem-teste.webp" alt="Setor em breve" loading="lazy" width="600" height="400">
                     <div class="sector-overlay">
                         <h3>Setor X...</h3>
                     </div>
@@ -218,11 +253,11 @@
         </section>
         
         <section id="contact">
-            <h2>Contato</h2>
-            <p>Entre em contato com nosso time</p>
+            <h2 data-aos="fade-right">Contato</h2>
+            <p data-aos="fade-right">Entre em contato com nosso time</p>
 
-            <div class="contact-container">
-                <form id="contact-form" class="contact-form">
+            <div class="contact-container" data-aos="fade-right">
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/SEU_ID" method="POST">
                     <label for="name">Seu nome</label>
                     <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
 
@@ -231,9 +266,9 @@
 
                     <label for="email">Seu e-mail</label>
                     <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-
+<!-- 
                     <label for="whatsapp">Seu WhatsApp</label>
-                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" inputmode="numeric">
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" inputmode="numeric"> -->
 
                     <label for="message">Sua mensagem</label>
                     <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
@@ -273,7 +308,7 @@
 <footer>
     <div class="footer-container">
         <div class="footer-section">
-            <a href="#"><img src="assets/images/rx-logo-dark.png" alt="Logo da RX"></a>
+            <a href="#hero" aria-label="Voltar ao início"><img src="assets/images/rx-logo-dark.webp" alt="Logo da RX" width="150" height="50"></a>
             <p>Soluções industriais de alta performance para seu negócio.</p>
         </div>
 
@@ -291,7 +326,7 @@
             <h3>Contato</h3>
             <ul>
                 <li><a href="mailto:contato.rx@gmail.com">Email</a></li>
-                <li><a href="https://wa.me/5594123456789" target="_blank">WhatsApp</a></li>
+                <li><a href="https://wa.me/5594123456789" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                 <li><a href="tel:+5594123456789">Telefone</a></li>
             </ul>
         </div>
@@ -299,9 +334,9 @@
         <div class="footer-section">
             <h3>Redes Sociais</h3>
             <div class="footer-socials">
-                <a href="#" title="Facebook">f</a>
-                <a href="#" title="Instagram">I</a>
-                <a href="#" title="LinkedIn">in</a>
+                <a href="#" title="Facebook" aria-label="Facebook">f</a>
+                <a href="#" title="Instagram" aria-label="Instagram">I</a>
+                <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
             </div>
         </div>
     </div>
