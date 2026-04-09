@@ -14,13 +14,17 @@
     --header-height: 100px;
 }
 
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: var(--black-primary-color);
     background-color: var(--white-primary-color);
-    overflow-x: hidden; 
-    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header {
@@ -213,6 +217,7 @@ header.header-scrolled {
         justify-content: center;
         gap: 48px;
         position: relative;
+        overflow: hidden;
     }
     
     .about-highlights::before {
@@ -333,6 +338,7 @@ header.header-scrolled {
     
         img {
             display: block;
+            width: 100%;
             max-width: 100%;
             height: auto;
             object-fit: cover;
