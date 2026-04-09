@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado - RX Comércio e Equipamentos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/rx-favicon.webp" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111111;
+            color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .thank-you-container {
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .thank-you-logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .thank-you-line {
+            width: 60px;
+            height: 4px;
+            background-color: #c52613;
+            border-radius: 2px;
+        }
+
+        .thank-you-title {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .thank-you-title span {
+            color: #c52613;
+        }
+
+        .thank-you-message {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #b0b0b0;
+        }
+
+        .thank-you-btn {
+            display: inline-block;
+            padding: 14px 40px;
+            background-color: #c52613;
+            color: #f5f5f5;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 8px;
+        }
+
+        .thank-you-btn:hover {
+            background-color: #a01f0f;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .thank-you-logo {
+                max-width: 150px;
+            }
+
+            .thank-you-title {
+                font-size: 1.5rem;
+            }
+
+            .thank-you-message {
+                font-size: 0.9rem;
+            }
+
+            .thank-you-btn {
+                padding: 12px 32px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <img class="thank-you-logo" src="assets/images/rx-logo-dark.webp" alt="Logo RX Comércio e Equipamentos" width="200" height="67">
+        <div class="thank-you-line"></div>
+        <h1 class="thank-you-title">A <span>RX</span> agradece o seu contato</h1>
+        <p class="thank-you-message">Recebemos sua mensagem com sucesso. Nossa equipe entrará em contato o mais breve possível.</p>
+        <a class="thank-you-btn" href="index.html">Voltar ao site</a>
+    </div>
+</body>
+</html>
