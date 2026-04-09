@@ -22,6 +22,7 @@
     <link rel="shortcut icon" href="assets/images/rx-favicon.webp" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
@@ -161,50 +162,72 @@
         </section>
     
         <section id="services">
-            <h2 data-aos="fade-right">Serviços</h2>
-            <div class="services-container" data-aos="fade-right">
-                <div class="service-item white-bg">
-                    <div class="service-content">
-                        <h3>Revestimento de Tambores</h3>
-                        <ul>
-                            <li>Evita desgaste prematuro causado por atrito contínuo</li>
-                            <li>Aumenta significativamente a vida útil dos tambores</li>
-                            <li>Reduz paradas não programadas na operação</li>
-                            <li>Melhora a aderência e o desempenho do sistema</li>
-                            <li>Diminui custos com manutenção corretiva</li>
-                        </ul>
+            <h2 data-aos="fade-right">Nossos Serviços</h2>
+            <p class="services-subtitle" data-aos="fade-right">Confira nossas principais atividades</p>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon">
+                        <i class="fa-regular fa-circle-dot"></i>
                     </div>
-                    <a href="#contact" class="btn-service">Consultar</a>
+                    <h3>Revestimento de Tambores</h3>
                 </div>
 
-                <div class="service-item white-bg">
-                    <div class="service-content">
-                        <h3>Revestimento e Reforma de Componentes</h3>
-                        <ul>
-                            <li>Recupera peças desgastadas sem necessidade de substituição total</li>
-                            <li>Reduz custos operacionais com reposição de componentes</li>
-                            <li>Aumenta a resistência contra abrasão, impacto e corrosão</li>
-                            <li>Restaura a performance original do equipamento</li>
-                            <li>Prolonga o ciclo de vida dos ativos industriais</li>
-                        </ul>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-gears"></i>
                     </div>
-                    <a href="#contact" class="btn-service">Consultar</a>
+                    <h3>Reforma de Componentes</h3>
                 </div>
 
-                <div class="service-item white-bg">
-                    <div class="service-content">
-                        <h3>Revestimento e Reforma de Tubulações</h3>
-                        <ul>
-                            <li>Protege contra corrosão e desgaste interno/externo</li>
-                            <li>Reduz riscos de vazamentos e falhas estruturais</li>
-                            <li>Aumenta a durabilidade das tubulações em ambientes agressivos</li>
-                            <li>Melhora a eficiência no transporte de materiais/fluidos</li>
-                            <li>Diminui custos com manutenção e substituições frequentes</li>
-                        </ul>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
                     </div>
-                    <a href="#contact" class="btn-service">Consultar</a>
+                    <h3>Reforma de Tubulações</h3>
                 </div>
 
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-arrows-left-right"></i>
+                    </div>
+                    <h3>Manutenção de Correias Transportadoras</h3>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <h3>Montagem Industrial</h3>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h3>Vulcanização Industrial</h3>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3>Fornecimento de Rolos e Cavaletes</h3>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3>Consultoria Técnica</h3>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3>Manutenção Preventiva</h3>
+                </div>
             </div>
         </section>
 
@@ -257,21 +280,21 @@
             <p data-aos="fade-right">Entre em contato com nosso time</p>
 
             <div class="contact-container" data-aos="fade-right">
-                <form id="contact-form" class="contact-form" action="https://formspree.io/f/SEU_ID" method="POST">
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/mnjoyjen" method="POST">
                     <label for="name">Seu nome</label>
-                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                    <input type="text" id="name" name="Nome" placeholder="Digite seu nome" required>
 
                     <label for="tel">Seu telefone</label>
-                    <input type="tel" id="tel" name="tel" placeholder="(XX) XXXXX-XXXX" inputmode="numeric">
+                    <input type="tel" id="tel" name="Telefone" placeholder="(XX) XXXXX-XXXX" inputmode="numeric">
 
                     <label for="email">Seu e-mail</label>
-                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    <input type="email" id="email" name="E-mail" placeholder="seu@email.com" required>
 <!-- 
                     <label for="whatsapp">Seu WhatsApp</label>
                     <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" inputmode="numeric"> -->
 
                     <label for="message">Sua mensagem</label>
-                    <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    <textarea id="message" name="Mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
 
                     <button type="submit">Enviar</button>
                 </form>
@@ -348,4 +371,3 @@
     
 </body>
 </html>
-
